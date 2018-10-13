@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import { Input, Menu, Segment } from 'semantic-ui-react';
+import { Input, Menu, Segment, Grid } from 'semantic-ui-react';
 
 // Profile Page + Settings
 export default class profile extends Component {
@@ -45,6 +45,19 @@ export default class profile extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Menu>
+
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={3} />
+            <Grid.Column width={5}>
+              <Segment>Card 1</Segment>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <Segment>Card 2</Segment>
+            </Grid.Column>
+            <Grid.Column width={3} />
+          </Grid.Row>
+        </Grid>
       </div>
     );
   }

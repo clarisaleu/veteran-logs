@@ -12,14 +12,31 @@ body {
     #c9d6ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/* Home page */
 .logo {
   width: 400px;
+  margin: 0;
 }
-.form-contain {
+/* status */
+.inputs {
   width: 300px;
 }
-.form-header {
+.prof-pic {
+  width: 100px;
+  margin: 0;
+  margin-left: 40px;
+  align-items: center;
 }
+.heading-1 {
+  margin-top: 50px;
+}
+.friend-list {
+  width: 390px;
+  height: 320px;
+  background: white;
+  position: relative;
+}
+/* Center */
 .child {
   display: flex;
   flex-direction: column;
