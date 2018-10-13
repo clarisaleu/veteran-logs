@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import { Menu } from '../containers/Menu/';
 
 // Profile Page + Settings
 export default class dashboard extends Component {
@@ -12,7 +11,7 @@ export default class dashboard extends Component {
     const { activeItem } = this.state;
     return (
       <div>
-        <Menu />;
+        Helllllooooooooo.
       </div>
     );
   }
