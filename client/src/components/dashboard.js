@@ -16,7 +16,7 @@ export default class dashboard extends Component {
     return (
       <div>
         {/* Menu */}
-        <Menu pointing icon>
+        <Menu pointing icon color={'teal'}>
           <div class="item">
             <img class="bigger" src={require('../images/logo2.png')} />
           </div>
@@ -67,34 +67,46 @@ export default class dashboard extends Component {
         <div class="ui form">
           <div class="field">
             <Grid>
-              <Grid.Row>
+              <Grid.Row className="">
                 <Grid.Column width={2} />
                 <Grid.Column width={10}>
-                  <Segment>
+                  <Segment className="style-friends">
                     <Header>
                       <Image
                         className="prof-pic"
                         src={require('../images/sri.jpg')}
                         circular
                       />
-                      What do you want to share today?
+                      Hello Sri, what do you want to share today?
                     </Header>
                   </Segment>
                   <Segment>
-                    <input type="text" />
+                    <form>
+                      <Header className="">
+                        <input type="text" name="name" />
+                      </Header>
+                      <Button fluid color="teal">
+                        Share
+                      </Button>
+                    </form>
                   </Segment>
                   <Segment>
                     {/* Newsfeed */}
                     <Item.Group divided>
                       <Item>
-                        <Item.Image src={require('../images/story-one.jpg')} />
+                        <Item.Image
+                          className="img-big"
+                          src={require('../images/story-one.jpg')}
+                        />
 
                         <Item.Content>
-                          <Item.Header as="a">Bootcamp</Item.Header>
+                          <Item.Header as="a" className="head-big">
+                            <div class="head-big">Bootcamp</div>
+                          </Item.Header>
                           <Item.Meta>
                             <span className="cinema">Marine Boot Camp</span>
                           </Item.Meta>
-                          <Item.Description>
+                          <Item.Description className="fontbig">
                             We had a guy that somehow got his watch through the
                             indoc (They take all your crap when you first get
                             there). Well, the Drill Instructors found out he had
@@ -109,22 +121,26 @@ export default class dashboard extends Component {
                           <Item.Extra>
                             {/* Tags */}
                             <Label>Bootcamp</Label>
-                            <Label> Lol</Label>
                           </Item.Extra>
                         </Item.Content>
                       </Item>
 
                       <Item>
-                        <Item.Image src={require('../images/story-two.jpg')} />
+                        <Item.Image
+                          className="img-big"
+                          src={require('../images/story-two.jpg')}
+                        />
 
                         <Item.Content>
-                          <Item.Header as="a">The Eagle Scout</Item.Header>
+                          <Item.Header as="a" className="head-big">
+                            The Eagle Scout
+                          </Item.Header>
                           <Item.Meta>
                             <span className="cinema">
                               Marine Corps Boot Camp
                             </span>
                           </Item.Meta>
-                          <Item.Description>
+                          <Item.Description className="fontbig">
                             A recruit in Marine corps boot camp thought he was
                             special because he was an eagle scout. The Drill
                             Instructor picked up on this and during Physical
@@ -144,16 +160,17 @@ export default class dashboard extends Component {
 
                       <Item>
                         <Item.Image
+                          className="img-big"
                           src={require('../images/story-three.jpg')}
                         />
                         <Item.Content>
-                          <Item.Header as="a">
+                          <Item.Header as="a" className="head-big">
                             The Basic Training Omelette{' '}
                           </Item.Header>
                           <Item.Meta>
                             <span className="cinema">Army</span>
                           </Item.Meta>
-                          <Item.Description>
+                          <Item.Description className="fontbig">
                             Week 1 in Army Basic Training we had a soldier ask
                             for an omelette in chow line (which was not allowed
                             because there was absolutely no time to make custom
@@ -182,61 +199,88 @@ export default class dashboard extends Component {
                 </Grid.Column>
 
                 <Grid.Column width={3}>
-                  <Header>My Connections</Header>
-                  <div class="style-friends">
+                  <Segment className="style-friends">
+                    <Header className="text-big-2">My Connections</Header>
+                  </Segment>
+                  <Segment className="style-friends">
                     <List>
                       <List.Item>
                         <Image
+                          className="friend-pic"
                           avatar
-                          src="https://react.semantic-ui.com/images/avatar/small/rachel.png"
+                          src={require('../images/av1.jpg')}
                         />
                         <List.Content>
-                          <List.Header as="a">Rachel</List.Header>
-                          <List.Description />
+                          <List.Header as="a" className="friend-header">
+                            Rachel
+                          </List.Header>
+                          <List.Description className="friend-descript">
+                            Army
+                          </List.Description>
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <Image
+                          className="friend-pic"
                           avatar
-                          src="https://react.semantic-ui.com/images/avatar/small/lindsay.png"
+                          src={require('../images/av2.jpg')}
                         />
                         <List.Content>
-                          <List.Header as="a">Lindsay</List.Header>
-                          <List.Description />
+                          <List.Header as="a" className="friend-header">
+                            Lindsay
+                          </List.Header>
+                          <List.Description className="friend-descript">
+                            Military
+                          </List.Description>
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <Image
+                          className="friend-pic"
                           avatar
-                          src="https://react.semantic-ui.com/images/avatar/small/matthew.png"
+                          src={require('../images/av3.jpg')}
                         />
                         <List.Content>
-                          <List.Header as="a">Matthew</List.Header>
-                          <List.Description />
+                          <List.Header as="a" className="friend-header">
+                            Matthew
+                          </List.Header>
+                          <List.Description className="friend-descript">
+                            Navy
+                          </List.Description>
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <Image
+                          className="friend-pic"
                           avatar
-                          src="https://react.semantic-ui.com/images/avatar/small/jenny.jpg"
+                          src={require('../images/av4.jpg')}
                         />
                         <List.Content>
-                          <List.Header as="a">Jenny Hess</List.Header>
-                          <List.Description />
+                          <List.Header as="a" className="friend-header">
+                            Jenny Hess
+                          </List.Header>
+                          <List.Description className="friend-descript">
+                            Air Force
+                          </List.Description>
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <Image
+                          className="friend-pic"
                           avatar
-                          src="https://react.semantic-ui.com/images/avatar/small/veronika.jpg"
+                          src={require('../images/av5.png')}
                         />
                         <List.Content>
-                          <List.Header as="a">Veronika Ossi</List.Header>
-                          <List.Description />
+                          <List.Header as="a" className="friend-header">
+                            Veronika Ossi
+                          </List.Header>
+                          <List.Description className="friend-descript">
+                            Military
+                          </List.Description>
                         </List.Content>
                       </List.Item>
                     </List>
-                  </div>
+                  </Segment>
                 </Grid.Column>
                 <Grid.Column width={1} />
               </Grid.Row>
