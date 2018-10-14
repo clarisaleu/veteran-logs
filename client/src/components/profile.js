@@ -23,7 +23,7 @@ class profile extends React.Component {
     return (
       <div>
         {/* Menu */}
-        <Menu pointing icon>
+        <Menu pointing icon color={'teal'}>
           <div class="item">
             <img class="bigger" src={require('../images/logo2.png')} />
           </div>
@@ -79,7 +79,7 @@ class profile extends React.Component {
                     <Grid.Row>
                       <Grid.Column width={5} />
                       <Grid.Column width={10}>
-                        <Header>
+                        <Header className="head-big">
                           <Image avatar src={require('../images/sri.jpg')} />
                           My Profile
                         </Header>
@@ -90,36 +90,38 @@ class profile extends React.Component {
                 </Segment>
                 <Segment>
                   <Grid>
-                    <Grid.Row>
+                    <Grid.Row className="colored">
                       <Grid.Column width={0} />
                       <Grid.Column width={10}>
                         <List verticalAlign="Left" size="huge">
                           <List.Item>
                             <List.Content>
-                              <List.Header>Name: Srikanth Mukku</List.Header>
-                            </List.Content>
-                          </List.Item>
-                          <List.Item>
-                            <List.Content>
-                              <List.Header>Years Served: 18</List.Header>
-                            </List.Content>
-                          </List.Item>
-                          <List.Item>
-                            <List.Content>
-                              <List.Header>
-                                Higher Education: National Hydrographic School
+                              <List.Header className="colored friends-header">
+                                Srikanth Mukku
                               </List.Header>
                             </List.Content>
                           </List.Item>
                           <List.Item>
                             <List.Content>
-                              <List.Header>Current City: Seattle</List.Header>
+                              <List.Header>Served 18 Years</List.Header>
                             </List.Content>
                           </List.Item>
                           <List.Item>
                             <List.Content>
                               <List.Header>
-                                Work: My Legacy Logs Inc.
+                                PMP - National Hydrographic School
+                              </List.Header>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Content>
+                              <List.Header>Seattle, WA</List.Header>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Content>
+                              <List.Header>
+                                CEO at My Legacy Logs Inc.
                               </List.Header>
                             </List.Content>
                           </List.Item>
@@ -137,8 +139,10 @@ class profile extends React.Component {
                   <Grid.Row>
                     <Grid.Column width={1} />
                     <Grid.Column width={8}>
-                      <Header>Srikanth Mukku</Header>
-                      <p> Member Since 10-13-2018</p>
+                      <Header size="huge" className="fontbig2">
+                        Srikanth Mukku
+                      </Header>
+                      <p class="memb-big"> Member Since 10-13-2018</p>
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
@@ -151,8 +155,36 @@ class profile extends React.Component {
                           src={require('../images/sri.jpg')}
                         />
                       </Header>
+                      <Header as="h3" dividing />
                     </Grid.Column>
+
                     <Grid.Column width={6} />
+                    <Header className="style-gal-head">My Gallery</Header>
+                    <List verticalAlign="middle">
+                      <List.Item>
+                        <Image
+                          className="style-gal"
+                          src={require('../images/gal1.jpg')}
+                        />
+                        <List.Content>
+                          <List.Header />
+                        </List.Content>
+                      </List.Item>
+                      <List.Item>
+                        <Image
+                          className="style-gal"
+                          src={require('../images/gal2.jpg')}
+                        />
+                        <List.Content />
+                      </List.Item>
+                      <List.Item>
+                        <Image
+                          className="style-gal"
+                          src={require('../images/gal3.jpg')}
+                        />
+                        <List.Content />
+                      </List.Item>
+                    </List>
                   </Grid.Row>
                 </Grid>
                 <Grid>
