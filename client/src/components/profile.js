@@ -72,14 +72,6 @@ class profile extends React.Component {
         <Grid>
           <Grid.Row>
             <Grid.Column width={3} />
-            <Grid.Column width={10}>
-              <Progress percent={55}>Label</Progress>
-            </Grid.Column>
-
-            <Grid.Column width={3} />
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column width={3} />
             <Grid.Column width={5}>
               <Segment>
                 <Segment>
@@ -88,7 +80,7 @@ class profile extends React.Component {
                       <Grid.Column width={5} />
                       <Grid.Column width={10}>
                         <Header>
-                          <Image avatar src={require('../images/user.jpg')} />
+                          <Image avatar src={require('../images/sri.jpg')} />
                           My Profile
                         </Header>
                       </Grid.Column>
@@ -99,35 +91,36 @@ class profile extends React.Component {
                 <Segment>
                   <Grid>
                     <Grid.Row>
-                      <Grid.Column width={5} />
+                      <Grid.Column width={0} />
                       <Grid.Column width={10}>
-                        <List animated verticalAlign="middle" size="huge">
+                        <List verticalAlign="Left" size="huge">
                           <List.Item>
-                            {/* <Image avatar src='/images/avatar/small/helen.jpg' /> */}
                             <List.Content>
-                              <List.Header>Contact Info</List.Header>
-                            </List.Content>
-                          </List.Item>
-                          <List.Item>
-                            {/* <Image avatar src='/images/avatar/small/christian.jpg' /> */}
-                            <List.Content>
-                              <List.Header>School</List.Header>
-                            </List.Content>
-                          </List.Item>
-                          <List.Item>
-                            {/* <Image avatar src='/images/avatar/small/daniel.jpg' /> */}
-                            <List.Content>
-                              <List.Header>Higher Education</List.Header>
+                              <List.Header>Name: Srikanth Mukku</List.Header>
                             </List.Content>
                           </List.Item>
                           <List.Item>
                             <List.Content>
-                              <List.Header>Emergency Contact Info</List.Header>
+                              <List.Header>Years Served: 18</List.Header>
                             </List.Content>
                           </List.Item>
                           <List.Item>
                             <List.Content>
-                              <List.Header>Work</List.Header>
+                              <List.Header>
+                                Higher Education: National Hydrographic School
+                              </List.Header>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Content>
+                              <List.Header>Current City: Seattle</List.Header>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Content>
+                              <List.Header>
+                                Work: My Legacy Logs Inc.
+                              </List.Header>
                             </List.Content>
                           </List.Item>
                         </List>
@@ -144,8 +137,8 @@ class profile extends React.Component {
                   <Grid.Row>
                     <Grid.Column width={1} />
                     <Grid.Column width={8}>
-                      <Header>Dr. Dogges</Header>
-                      <p> Member Since 01-20-1998</p>
+                      <Header>Srikanth Mukku</Header>
+                      <p> Member Since 10-13-2018</p>
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
@@ -155,7 +148,7 @@ class profile extends React.Component {
                         <Image
                           className="img-big"
                           avatar
-                          src={require('../images/user.jpg')}
+                          src={require('../images/sri.jpg')}
                         />
                       </Header>
                     </Grid.Column>

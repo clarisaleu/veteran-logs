@@ -69,12 +69,12 @@ export default class dashboard extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column width={2} />
-                <Grid.Column width={11}>
+                <Grid.Column width={10}>
                   <Segment>
                     <Header>
                       <Image
                         className="prof-pic"
-                        src={require('../images/user.jpg')}
+                        src={require('../images/sri.jpg')}
                         circular
                       />
                       What do you want to share today?
@@ -87,57 +87,93 @@ export default class dashboard extends Component {
                     {/* Newsfeed */}
                     <Item.Group divided>
                       <Item>
-                        <Item.Image src="https://occ-0-1001-999.1.nflxso.net/art/15495/883368e492e8c5e23b5dc38527e412747d015495.jpg" />
+                        <Item.Image src={require('../images/story-one.jpg')} />
 
                         <Item.Content>
-                          <Item.Header as="a">12 Years a Slave</Item.Header>
+                          <Item.Header as="a">Bootcamp</Item.Header>
                           <Item.Meta>
-                            <span className="cinema">Union Square 14</span>
+                            <span className="cinema">Marine Boot Camp</span>
                           </Item.Meta>
-                          <Item.Description>My status update</Item.Description>
+                          <Item.Description>
+                            We had a guy that somehow got his watch through the
+                            indoc (They take all your crap when you first get
+                            there). Well, the Drill Instructors found out he had
+                            it when they saw him wearing it one day, so they put
+                            him in the squad bay trashcan and put the lid on it.
+                            Every time they walked by and kicked it he’d pop out
+                            with his watch and yell, “SIR THE TIME ON DECK IS
+                            ZERO-NINE-FORTY-FIVE!” and then go back into his can
+                            like the freakin’ grouch from Sesame Street. It was
+                            really, really hard not to laugh at that.
+                          </Item.Description>
                           <Item.Extra>
-                            <Label>IMAX</Label>
-                            <Label
-                              icon="globe"
-                              content="Additional Languages"
-                            />
+                            {/* Tags */}
+                            <Label>Bootcamp</Label>
+                            <Label> Lol</Label>
                           </Item.Extra>
                         </Item.Content>
                       </Item>
 
                       <Item>
-                        <Item.Image src="https://c1-zingpopculture.eb-cdn.com.au/merchandising/images/packshots/9e11772026914d30bf541381997908a2_Large.png" />
+                        <Item.Image src={require('../images/story-two.jpg')} />
 
                         <Item.Content>
-                          <Item.Header as="a">My Neighbor Totoro</Item.Header>
+                          <Item.Header as="a">The Eagle Scout</Item.Header>
                           <Item.Meta>
-                            <span className="cinema">IFC Cinema</span>
+                            <span className="cinema">
+                              Marine Corps Boot Camp
+                            </span>
                           </Item.Meta>
-                          <Item.Description>My status update</Item.Description>
+                          <Item.Description>
+                            A recruit in Marine corps boot camp thought he was
+                            special because he was an eagle scout. The Drill
+                            Instructor picked up on this and during Physical
+                            Training took him into the woods and made him build
+                            a nest. Then he had to squat over it in order to
+                            keep his eggs warm.
+                          </Item.Description>
                           <Item.Extra>
                             <Button primary floated="right">
-                              Buy tickets
+                              Read more
                               <Icon name="right chevron" />
                             </Button>
-                            <Label>Limited</Label>
+                            <Label>Marine</Label>
                           </Item.Extra>
                         </Item.Content>
                       </Item>
 
                       <Item>
-                        <Item.Image src="https://upload.wikimedia.org/wikipedia/en/b/bc/Watchmen_film_poster.jpg" />
-
+                        <Item.Image
+                          src={require('../images/story-three.jpg')}
+                        />
                         <Item.Content>
-                          <Item.Header as="a">Watchmen</Item.Header>
+                          <Item.Header as="a">
+                            The Basic Training Omelette{' '}
+                          </Item.Header>
                           <Item.Meta>
-                            <span className="cinema">IFC</span>
+                            <span className="cinema">Army</span>
                           </Item.Meta>
-                          <Item.Description>My status update</Item.Description>
+                          <Item.Description>
+                            Week 1 in Army Basic Training we had a soldier ask
+                            for an omelette in chow line (which was not allowed
+                            because there was absolutely no time to make custom
+                            omelettes for every single basic training soldier).
+                            The cooks started making the omelette when a drill
+                            sergeant asked what the hell was going on. The basic
+                            training soldier replied “go around, drill sergeant,
+                            I’m waitin’ on an omelette”. Needless to say, this
+                            was the wrong thing to say and do week one in basic
+                            training. Our platoon motto was henceforth “go
+                            around, drill sergeant, I’m waitin’ on an omelette”
+                            and the basic training soldier was henceforth named
+                            PVT Omelette.
+                          </Item.Description>
                           <Item.Extra>
                             <Button primary floated="right">
-                              Buy tickets
+                              Read more
                               <Icon name="right chevron" />
                             </Button>
+                            <Label>Army</Label>
                           </Item.Extra>
                         </Item.Content>
                       </Item>
@@ -146,8 +182,8 @@ export default class dashboard extends Component {
                 </Grid.Column>
 
                 <Grid.Column width={3}>
-                  <div>
-                    <Header>Friends List</Header>
+                  <Header>My Connections</Header>
+                  <div class="style-friends">
                     <List>
                       <List.Item>
                         <Image
@@ -156,13 +192,7 @@ export default class dashboard extends Component {
                         />
                         <List.Content>
                           <List.Header as="a">Rachel</List.Header>
-                          <List.Description>
-                            Last seen watching{' '}
-                            <a>
-                              <b>Arrested Development</b>
-                            </a>{' '}
-                            just now.
-                          </List.Description>
+                          <List.Description />
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -172,13 +202,7 @@ export default class dashboard extends Component {
                         />
                         <List.Content>
                           <List.Header as="a">Lindsay</List.Header>
-                          <List.Description>
-                            Last seen watching{' '}
-                            <a>
-                              <b>Bob's Burgers</b>
-                            </a>{' '}
-                            10 hours ago.
-                          </List.Description>
+                          <List.Description />
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -188,13 +212,7 @@ export default class dashboard extends Component {
                         />
                         <List.Content>
                           <List.Header as="a">Matthew</List.Header>
-                          <List.Description>
-                            Last seen watching{' '}
-                            <a>
-                              <b>The Godfather Part 2</b>
-                            </a>{' '}
-                            yesterday.
-                          </List.Description>
+                          <List.Description />
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -204,13 +222,7 @@ export default class dashboard extends Component {
                         />
                         <List.Content>
                           <List.Header as="a">Jenny Hess</List.Header>
-                          <List.Description>
-                            Last seen watching{' '}
-                            <a>
-                              <b>Twin Peaks</b>
-                            </a>{' '}
-                            3 days ago.
-                          </List.Description>
+                          <List.Description />
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -220,15 +232,13 @@ export default class dashboard extends Component {
                         />
                         <List.Content>
                           <List.Header as="a">Veronika Ossi</List.Header>
-                          <List.Description>
-                            Has not watched anything recently
-                          </List.Description>
+                          <List.Description />
                         </List.Content>
                       </List.Item>
                     </List>
                   </div>
-                  <Segment />
                 </Grid.Column>
+                <Grid.Column width={1} />
               </Grid.Row>
             </Grid>
           </div>

@@ -29,17 +29,11 @@ export default class login extends Component {
                 <label>Last Name</label>
                 <input type="text" name="last-name" placeholder="Last Name" />
               </div>
-              <div class="ui checkbox">
-                <input type="checkbox" tabindex="0" class="hidden" />
-                <label className="agreement">
-                  I Agree to the Terms and Conditions
-                </label>
-              </div>
               <div className="button-style">
                 <button
                   class="ui basic button"
                   type="submit"
-                  onClick={() => this.props.history.push('/Profile')}
+                  onClick={() => this.props.history.push('/Dashboard')}
                 >
                   <i class="icon user" />
                   Sign In
