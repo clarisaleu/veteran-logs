@@ -16,40 +16,50 @@ export default class dashboard extends Component {
     return (
       <div>
         {/* Menu */}
-        <Menu pointing>
+        <Menu pointing icon>
           <div class="item">
-            <img src={require('../images/logo2.png')} />
+            <img class="bigger" src={require('../images/logo2.png')} />
           </div>
+
           <Menu.Item
             name="Dashboard"
             active={activeItem === 'Dashboard'}
             onClick={() => this.props.history.push('/Dashboard')}
-          />
-          <Menu.Item
-            name="Messages"
-            active={activeItem === 'Messages'}
-            onClick={() => this.props.history.push('/Messages')}
-          />
-          <Menu.Item
-            name="Friends"
-            active={activeItem === 'Friends'}
-            onClick={() => this.props.history.push('/Friends')}
-          />
-          <Menu.Item
-            name="Profile"
-            active={activeItem === 'Profile'}
-            onClick={() => this.props.history.push('/Profile')}
-          />
-          <Menu.Item
-            name="Settings"
-            active={activeItem === 'Settings'}
-            onClick={() => this.props.history.push('/Settings')}
-          />
-          <Menu.Menu position="right">
-            <Menu.Item>
-              <Input icon="search" placeholder="Search..." />
+          >
+            <Icon name="home" className="bigger" />
+          </Menu.Item>
+
+          <Menu.Item>
+            <Input icon="search" placeholder="Search..." />
+          </Menu.Item>
+
+          <div class="right menu">
+            <a class="item">
+              <i class="bell icon bigger" />
+            </a>
+            <Menu.Item
+              name="Messages"
+              active={activeItem === 'Messages'}
+              onClick={() => this.props.history.push('/Messages')}
+            >
+              <Icon name="inbox" className="bigger" />
             </Menu.Item>
-          </Menu.Menu>
+            <Menu.Item
+              name="Profile"
+              active={activeItem === 'Profile'}
+              onClick={() => this.props.history.push('/Profile')}
+            >
+              <Icon name="user" className="bigger" />
+            </Menu.Item>
+            <Menu.Item
+              name="Settings"
+              active={activeItem === 'Settings'}
+              onClick={() => this.props.history.push('/Settings')}
+            >
+              <Icon name="settings" className="bigger" />
+            </Menu.Item>
+            <a class="item">Sign Out</a>
+          </div>
         </Menu>
 
         {/* Form to update statuses / User pic */}
@@ -59,7 +69,7 @@ export default class dashboard extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column width={2} />
-                <Grid.Column width={12}>
+                <Grid.Column width={11}>
                   <Segment>
                     <Header>
                       <Image
@@ -135,7 +145,7 @@ export default class dashboard extends Component {
                   </Segment>
                 </Grid.Column>
 
-                <Grid.Column width={2}>
+                <Grid.Column width={3}>
                   <div>
                     <Header>Friends List</Header>
                     <List>
