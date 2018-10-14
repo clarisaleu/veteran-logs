@@ -161,7 +161,7 @@ export default class dashboard extends Component {
                     {/* Newsfeed */}
                     <Item.Group divided>
                       <Item>
-                        <Item.Image src="*" />
+                        <Item.Image src="https://occ-0-1001-999.1.nflxso.net/art/15495/883368e492e8c5e23b5dc38527e412747d015495.jpg" />
 
                         <Item.Content>
                           <Item.Header as="a">12 Years a Slave</Item.Header>
@@ -180,7 +180,7 @@ export default class dashboard extends Component {
                       </Item>
 
                       <Item>
-                        <Item.Image src="*" />
+                        <Item.Image src="https://c1-zingpopculture.eb-cdn.com.au/merchandising/images/packshots/9e11772026914d30bf541381997908a2_Large.png" />
 
                         <Item.Content>
                           <Item.Header as="a">My Neighbor Totoro</Item.Header>
@@ -199,7 +199,7 @@ export default class dashboard extends Component {
                       </Item>
 
                       <Item>
-                        <Item.Image src="*" />
+                        <Item.Image src="https://upload.wikimedia.org/wikipedia/en/b/bc/Watchmen_film_poster.jpg" />
 
                         <Item.Content>
                           <Item.Header as="a">Watchmen</Item.Header>
