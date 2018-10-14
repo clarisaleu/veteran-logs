@@ -10,6 +10,9 @@ body {
     #95acf5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.bigger {
+  width: 70px !important;
+}
 /* Home page */
 .logo {
   width: 400px;
@@ -31,7 +34,6 @@ body {
 .heading-1 {
   margin-top: 50px;
 }
-
 .friend-list {
   width: 390px;
   height: 320px;

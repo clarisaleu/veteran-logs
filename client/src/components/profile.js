@@ -24,7 +24,7 @@ class profile extends React.Component {
         {/* Menu */}
         <Menu pointing>
           <div class="item">
-            <img src={require('../images/logo2.png')} />
+            <img class="bigger" src={require('../images/logo2.png')} />
           </div>
           <Menu.Item
             name="Dashboard"
