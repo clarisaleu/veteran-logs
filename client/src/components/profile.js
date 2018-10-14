@@ -14,48 +14,13 @@ import {
 
 // Profile Page + Settings
 class profile extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: null,
-      isLoaded: false,
-      items: []
-    };
-  }
-
-  componentDidMount() {
-    fetch('localhost:3000/addUserData')
-      .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            items: result.items
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
-  }
   state = { activeItem: 'Profile' };
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
     const { activeItem } = this.state;
-    const { error, isLoaded, items } = this.state;
     return (
       <div>
-        <ul>
-          {items.map(item => (
-            <li key={item.firstName}>
-              {item.firstName} {item.rank}
-            </li>
-          ))}
-        </ul>
         {/* Menu */}
         <Menu pointing>
           <div class="item">
