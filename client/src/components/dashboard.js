@@ -17,6 +17,9 @@ export default class dashboard extends Component {
       <div>
         {/* Menu */}
         <Menu pointing>
+          <div class="item">
+            <img src={require('../images/logo2.png')} />
+          </div>
           <Menu.Item
             name="Dashboard"
             active={activeItem === 'Dashboard'}
