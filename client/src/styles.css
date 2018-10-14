@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #c9d6ff; /* fallback for old browsers */
+  background-size:cover;
   background: -webkit-linear-gradient(
     #dfd8f8,
     #95acf5
